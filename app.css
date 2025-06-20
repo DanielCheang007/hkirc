@@ -109,12 +109,12 @@ header {
 
 .feature-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
   margin-top: 2rem;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .feature-title,
   .feature-desc {
     text-align: center;
