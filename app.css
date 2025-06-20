@@ -53,10 +53,12 @@ header {
 
 /* 为header添加margin-top避免内容被顶部logo遮挡 */
 header {
-  background: #0066cc;
+  background: linear-gradient(rgba(0, 102, 204, 0.7), rgba(0, 102, 204, 0.7)),
+    url(images/slogan.jpg) center/cover no-repeat;
   color: white;
   padding: 40px 0;
   text-align: center;
+  position: relative;
 }
 
 .company-logo {
