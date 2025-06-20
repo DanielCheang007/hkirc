@@ -42,7 +42,7 @@ header {
   gap: 1rem;
 
   .partner-logo {
-    min-height: 3rem;
+    min-height: 6rem;
     padding: 0;
   }
 }
@@ -52,6 +52,10 @@ header {
     flex-direction: row;
     gap: 0.5rem;
     justify-content: center;
+
+    .partner-logo {
+      min-height: 3rem;
+    }
   }
 
   .company-logo,
