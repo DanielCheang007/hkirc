@@ -44,9 +44,11 @@ header {
 
 .company-logo,
 .partner-logo {
-  height: 100px;
+  height: 120px;
   max-width: 200px;
   object-fit: contain;
+
+  padding: 10px 40px;
 }
 
 .logo-placeholder {
@@ -123,8 +125,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 80px;
-  width: 160px;
+  height: 120px;
+  width: 240px;
 }
 
 .partner-logo img {
