@@ -16,6 +16,7 @@
 </head>
 
 <body>
+	<a href="#main-content" class="skip-link">跳過導航</a>
 	<!-- 顶部logo区域 -->
 	<div class="top-logos">
 		<div class="container">
@@ -27,7 +28,7 @@
 	</div>
 
 	<!-- 头部区域 -->
-	<header>
+	<header id="main-content" tabindex="-1">
 		<div class="container">
 			<h1>Cybersec Training Hub - 香港領先的網絡安全員工培訓平台​</h1>
 			<p class="slogan">賦能員工 · 守護企業 · 構建安全防線</p>
@@ -45,30 +46,30 @@
 			<div class="feature-grid">
 				<!-- 宣传语1 -->
 				<div class="feature-card">
-					<div class="feature-icon">🔒</div>
+					<div class="feature-icon" aria-hidden="true">🔒</div>
 					<h3>全面覆蓋</h3>
-					<p>涵蓋從基礎安全意識到高級威脅防護的全方位培訓內容，滿足不同崗位需求</p>
+					<p><span class="sr-only">圖標: 鎖</span>涵蓋從基礎安全意識到高級威脅防護的全方位培訓內容，滿足不同崗位需求</p>
 				</div>
 
 				<!-- 宣传语2 -->
 				<div class="feature-card">
-					<div class="feature-icon">📊</div>
+					<div class="feature-icon" aria-hidden="true">📊</div>
 					<h3>數據驅動</h3>
-					<p>基於真實攻擊數據和行業最佳實踐設計課程，確保培訓內容與時俱進</p>
+					<p><span class="sr-only">圖標: 圖表</span>基於真實攻擊數據和行業最佳實踐設計課程，確保培訓內容與時俱進</p>
 				</div>
 
 				<!-- 宣传语3 -->
 				<div class="feature-card">
-					<div class="feature-icon">🎯</div>
+					<div class="feature-icon" aria-hidden="true">🎯</div>
 					<h3>效果可測</h3>
-					<p>通過模擬釣魚、知識測試等方式量化培訓效果，直觀展示ROI</p>
+					<p><span class="sr-only">圖標: 靶心</span>通過模擬釣魚、知識測試等方式量化培訓效果，直觀展示ROI</p>
 				</div>
 
 				<!-- 宣传语4 -->
 				<div class="feature-card">
-					<div class="feature-icon">🔄</div>
+					<div class="feature-icon" aria-hidden="true">🔄</div>
 					<h3>持續更新</h3>
-					<p>課程內容每月更新，緊跟網絡安全威脅演變和合規要求變化</p>
+					<p><span class="sr-only">圖標: 循環箭頭</span>課程內容每月更新，緊跟網絡安全威脅演變和合規要求變化</p>
 				</div>
 			</div>
 		</div>
@@ -149,10 +150,12 @@
 				<div class="footer-links">
 					<h3>聯絡方式</h3>
 					<ul class="contact-info">
-						<li><i class="icon-location"></i>澳門新口岸上海街中華總商會大廈六、七樓</li>
-						<li><i class="icon-phone"></i>電話：(853) 28781313</li>
-						<li><i class="icon-fax"></i>傳真：(853) 28788233</li>
-						<li><i class="icon-email"></i>電郵：cpttm@cpttm.org.mo</li>
+						<li><span class="icon-location" aria-hidden="true"></span><span class="sr-only">地址:
+							</span>澳門新口岸上海街中華總商會大廈六、七樓</li>
+						<li><span class="icon-phone" aria-hidden="true"></span><span class="sr-only">電話: </span>(853) 28781313</li>
+						<li><span class="icon-fax" aria-hidden="true"></span><span class="sr-only">傳真: </span>(853) 28788233</li>
+						<li><span class="icon-email" aria-hidden="true"></span><span class="sr-only">電郵: </span>cpttm@cpttm.org.mo
+						</li>
 					</ul>
 				</div>
 			</div>
