@@ -59,7 +59,14 @@ header {
   text-align: center;
 }
 
-.company-logo,
+.company-logo {
+  height: auto;
+  max-height: 6rem;
+  max-width: 100%;
+  object-fit: contain;
+  padding: 0.5rem 1rem;
+}
+
 .partner-logo {
   height: auto;
   max-height: 7.5rem;
@@ -146,8 +153,8 @@ header {
 
 .partner-logos {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(4, minmax(12rem, 1fr));
+  gap: 1.5rem;
 }
 
 .partner-logo {
@@ -157,8 +164,18 @@ header {
   align-items: center;
   justify-content: center;
   height: auto;
-  min-height: 5rem;
-  padding: 0.5rem;
+  min-height: 6rem;
+  padding: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .partner-logos {
+    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+  }
+
+  .partner-logo {
+    min-height: 5rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -168,6 +185,7 @@ header {
 
   .partner-logo {
     min-height: 4rem;
+    padding: 0.5rem;
   }
 }
 
