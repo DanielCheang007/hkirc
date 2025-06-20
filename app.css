@@ -1,0 +1,215 @@
+/* 基础样式 */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background: #fff;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+/* 头部样式 */
+header {
+  background: #0066cc;
+  color: white;
+  text-align: center;
+}
+
+.top-logos {
+  background: white;
+}
+
+.header-logos {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px;
+  padding: 0 20px;
+}
+
+/* 为header添加margin-top避免内容被顶部logo遮挡 */
+header {
+  background: #0066cc;
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.company-logo,
+.partner-logo {
+  height: 100px;
+  max-width: 200px;
+  object-fit: contain;
+}
+
+.logo-placeholder {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.slogan {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* 特性区块 */
+.features {
+  padding: 60px 0;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.feature-card {
+  background: #f8f9fa;
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.feature-icon {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+/* CTA区域 */
+.cta {
+  background: #f1f8ff;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.cta-button {
+  display: inline-block;
+  background: #0066cc;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.cta-button:hover {
+  background: #0052a3;
+}
+
+/* 合作伙伴 */
+.partners {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.partner-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.partner-logo {
+  background: #fff;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  width: 160px;
+}
+
+.partner-logo img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* 页脚 */
+footer {
+  background: #2c3e50;
+  color: white;
+  padding: 40px 0;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.footer-links h3 {
+  margin-bottom: 15px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #bdc3c7;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: white;
+}
+
+.disclaimer {
+  font-size: 14px;
+  color: #bdc3c7;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #34495e;
+}
+
+/* WCAG 兼容性样式 */
+:focus {
+  outline: 3px solid #005fcc;
+  outline-offset: 2px;
+}
+
+@media (prefers-contrast: more) {
+  body {
+    color: #000;
+    background: #fff;
+  }
+
+  a {
+    color: #005fcc;
+    text-decoration: underline;
+  }
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
