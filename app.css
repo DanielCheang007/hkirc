@@ -42,7 +42,7 @@ header {
   gap: 1rem;
 
   .partner-logo {
-    min-height: 6rem;
+    min-height: 3rem;
     padding: 0;
   }
 }
