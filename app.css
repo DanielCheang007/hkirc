@@ -57,7 +57,7 @@ header {
   .company-logo,
   .partner-logo {
     max-height: 2.5rem;
-    padding: 0.25rem;
+    /* padding: 0.25rem; */
   }
 }
 
@@ -208,7 +208,7 @@ header {
   }
 
   .partner-logo {
-    min-height: 5rem;
+    min-height: 8rem;
   }
 }
 
@@ -218,8 +218,8 @@ header {
   }
 
   .partner-logo {
-    min-height: 4rem;
-    padding: 0.5rem;
+    /* min-height: 4rem; */
+    /* padding: 0.5rem; */
   }
 }
 
