@@ -40,14 +40,17 @@ header {
   justify-content: flex-start;
   align-items: center;
   gap: 1rem;
-  padding: 0 0.5rem;
+
+  .partner-logo {
+    min-height: 6rem;
+    padding: 0;
+  }
 }
 
 @media (max-width: 768px) {
   .header-logos {
     flex-direction: row;
     gap: 0.5rem;
-    padding: 0.5rem;
     justify-content: center;
   }
 
@@ -70,25 +73,25 @@ header {
 
 .company-logo {
   height: auto;
-  max-height: 4rem;
+  max-height: 3rem;
   max-width: 100%;
   object-fit: contain;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem;
 }
 
 .partner-logo {
   height: auto;
-  max-height: 5rem;
+  max-height: 3.5rem;
   max-width: 100%;
   object-fit: contain;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem;
 }
 
 @media (max-width: 768px) {
   .company-logo,
   .partner-logo {
-    max-height: 3rem;
-    padding: 0.5rem;
+    max-height: 2.5rem;
+    padding: 0.25rem;
   }
 }
 
@@ -195,7 +198,7 @@ header {
   align-items: center;
   justify-content: center;
   height: auto;
-  min-height: 6rem;
+  min-height: 8rem;
   padding: 1rem;
 }
 
